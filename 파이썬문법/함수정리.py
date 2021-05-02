@@ -29,12 +29,21 @@
 
 9. f-string
 
-10. strip( ) 함수
+10. strip( ) rstrip() lstrip() 함수
     정의:
     사용방법:
 
 11. upper() lower() capitalize() 함수
 
 12. endswith() startswith() 함수
+
+13. 리스트와 변수 차이
+
+14. .append() insert() 함수
+
+15. del
+
+16.  max()  min()  sum()  len() 함수
+
 
 
