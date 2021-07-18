@@ -167,10 +167,10 @@ def is_game_over() :
 def is_overlapped( xpos , ypos , turn ) :
     #블록이 벽이나 땅의 블록과 충돌했는지 확인 함수
     data = 현재블록.type[turn]
-    for y_offset in range( 현재블록.size ) :
-        for x_offset in range( 현재블록.size ) :
-            if 0 <=xpos + x_offset < 가로 and 0 <= ypos + y_offset < 가로 :
-                if data[y_offset*현재블록.size + x_offset ] != 0 and 필드[ypos+y_offset][xpos+x_offset] !=0 :
+    for y_offset in range(현재블록.size):
+        for x_offset in range(현재블록.size):
+            if 0 <= xpos+x_offset < 가로 and 0 <= ypos+y_offset < 세로:
+                if data[y_offset*현재블록.size + x_offset] != 0 and 필드[ypos+y_offset][xpos+x_offset] != 0:
                     return True
     return False
 
