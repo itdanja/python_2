@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <style> /*주석*/
+        /* html 태그를 꾸미는 style 태그 */
+
+        /*눈누 홈페이지에서  맘에 드는 웹폰트 선택 복사해서 붙여넣기  */
+        @font-face {
+            font-family: 'CookieRunOTF-Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /*  *모든 곳에 적용하는 style */
+
+        *{
+            font-family: 'CookieRunOTF-Bold';
+        }
+
+    </style>
+
+</head>
+<body>
+    <!--
+       class=
+            navbar   : 메뉴 꾸미기
+            navbar-default : 메뉴 기본값
+            navbar-fixed-top : 메뉴 위 화면에서 고정
+        -->
+    <!--
+        style=
+               width : 가로길이[px]
+               padding : 안쪽여백[px]
+               margin : 바깥여백[px]
+               font-size : 글자크기[px]
+    -->
+
+    <!-- 상단 메뉴 -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- 화면 크기가 작아질경우 오른쪽에 메뉴 모음 단추 -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only"> toggle </span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+                <a href="main.html"> <img src="logo.png" style="width:100px; padding:5px"></a>
+            </div>
+
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li style="font-size:20px;" > <a href="#">공지사항</a> </li>
+                    <li style="font-size:20px;"> <a href="board.html">커뮤니티</a></li>
+                    <li style="font-size:20px;"> <a href="#">사진갤러리1</a> </li>
+                    <li style="font-size:20px;"> <a href="#">사진갤러리2</a> </li>
+                    <li style="font-size:20px;"> <a href="#">사진갤러리3</a> </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right"> <!-- 오른쪽 배치 -->
+                    <li style="font-size:20px;"> <a href="#">회원가입</a> </li>
+                    <li style="font-size:20px;"> <a href="#">로그인</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> <!-- 제이쿼리 사용 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- 상단메뉴 끝 -->
+
+</body>
+</html>

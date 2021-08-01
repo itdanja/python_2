@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <style> /*주석*/
+        /* html 태그를 꾸미는 style 태그 */
+
+        /*눈누 홈페이지에서  맘에 드는 웹폰트 선택 복사해서 붙여넣기  */
+        @font-face {
+            font-family: 'CookieRunOTF-Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /*  *모든 곳에 적용하는 style */
+
+        *{
+            font-family: 'CookieRunOTF-Bold';
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- 상단 메뉴 -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+
+            <div class="navbar-header">
+                <a href="main.html"> <img src="logo.png" style="width:100px; padding:5px"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+
+                <ul class="nav navbar-nav">
+                    <li style="font-size:20px;" > <a href="#">공지사항</a> </li>
+                    <li style="font-size:20px;"> <a href="board.html">커뮤니티</a></li>
+                    <li style="font-size:20px;"> <a href="#">사진갤러리1</a> </li>
+                    <li style="font-size:20px;"> <a href="#">사진갤러리2</a> </li>
+                    <li style="font-size:20px;"> <a href="#">사진갤러리3</a> </li>
+                    <li style="font-size:20px;"> <a href="#">사진갤러리4</a> </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right"> <!-- 오른쪽 배치 -->
+                    <li style="font-size:20px;"> <a href="#">회원가입</a> </li>
+                    <li style="font-size:20px;"> <a href="#">로그인</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 상단메뉴 끝 -->
+    <br><br><br><br>
+    <div class="container">
+        <div class="container"> <!--구분 짓기 태그  -->
+
+
+        <div align="right">
+            <a href="boardwrite.html"><button class="btn btn-success">글쓰기</button></a>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>번호</th> <th>제목</th> <th>작성자</th> <th>작성일</th> <th>조회수</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 </td> <td>제목위치</td> <td>유재석</td> <td>2021-08-01</td> <td> 13 </td>
+                </tr>
+                <tr>
+                    <td> 2 </td> <td>제목위치2</td> <td>강호동</td> <td>2021-08-03</td> <td> 30 </td>
+                </tr>
+                <tr>
+                    <td> 3 </td> <td>제목위치3</td> <td>신동엽</td> <td>2021-08-04</td> <td> 40 </td>
+                </tr>
+                <tr>
+                    <td> 4 </td> <td>제목위치4</td> <td>서장훈</td> <td>2021-08-04</td> <td> 40 </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table style="margin : 0 auto">
+            <tr>
+                <td>
+                    <select class="form-control">
+                        <option> 제목 </option>
+                        <option> 내용 </option>
+                        <option> 작성자 </option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" class="form-control" placeholder="검색어 입력">
+                </td>
+                <td>
+                    <input type="submit" value="검색" class="btn btn-info">
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    </div>
+
+
+</body>
+</html>
